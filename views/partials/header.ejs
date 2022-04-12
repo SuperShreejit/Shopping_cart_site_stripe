@@ -1,0 +1,17 @@
+<header class="main-header">
+	<nav class="nav main-nav">
+		<ul>
+			<li><a href="/">HOME</a></li>
+			<li><a href="/store">STORE</a></li>
+			<li><a href="/about">ABOUT</a></li>
+		</ul>
+	</nav>
+
+	<h1 class="band-name band-name-large">The Generics</h1>
+	<% if(locals.ishome) { %> 
+	<div class="container">
+		<a href="/store" class="btn btn-header">Get our Latest Album</a>
+	</div>
+	<a target="_blank" href="https://www.youtube.com/channel/UCpnDqArtNrm7FRWZyT5M5iA" class="btn btn-header btn-play"><span>&#9658;</span></a>
+	<% } %> 
+</header>

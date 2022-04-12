@@ -1,0 +1,14 @@
+<section class="checkout-section">
+  <h2 class="section-header">Checkout</h2>
+  <form class="checkout-form" id="payment-form">
+      <input type="text" id="email" placeholder="Enter email address" />
+      <div id="payment-element">
+        <!--Stripe.js injects the Payment Element-->
+      </div>
+      <button class="checkout-btn" id="submit">
+        <div class="spinner hidden" id="spinner"></div>
+        <span id="button-text">Pay now</span>
+      </button>
+      <div id="payment-message" class="hidden"></div>
+    </form>
+</section>

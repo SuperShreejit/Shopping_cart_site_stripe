@@ -1,0 +1,17 @@
+	<h2 class="section-header">MERCH</h2>
+	<div class="shop-items">
+		<% if(locals.merch) { 
+		merch.forEach(item => { 
+			%>
+		<div class="shop-item" data-item-id="<%= item.id %>">
+			<span class="shop-item-title"><%= item.name %></span>
+			<img class="shop-item-image" src="<%= item.imageSrc %>" />
+			<div class="shop-item-details">
+				<span class="shop-item-price">$<%= (item.price)/100 %></span>
+				<button class="btn btn-primary shop-item-button" type="button">
+					ADD TO CART
+				</button>
+			</div>
+		</div>
+		<% }) } %>
+	</div>
